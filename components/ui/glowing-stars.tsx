@@ -134,7 +134,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
 
   return (
     <div
-      className="h-48 p-1 w-full"
+      className="h-48 p-1 w-full pb-10"
       style={{
         display: "grid",
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
