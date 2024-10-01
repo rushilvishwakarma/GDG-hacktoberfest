@@ -94,7 +94,7 @@ const BentoGridDemo = () => (
         </p>
       </CardContent>
     </Card>
-    <BentoGrid className="w-full gap-4 text-left md:gap-6 grid grid-cols-1 md:grid-cols-2 pt-10">
+    <BentoGrid className="w-full gap-4 text-left md:gap-10 grid grid-cols-1 md:grid-cols-2 pt-10">
       {items.map((item, i) => (
         i < 2 ? (
           <Link key={item.title} href={item.link} passHref>
