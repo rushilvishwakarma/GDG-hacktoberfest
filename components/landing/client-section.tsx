@@ -155,13 +155,13 @@ const ClientSection = () => (
         {
           name: 'Rushil Vishwakarma',
           title: 'Web-Development Co-Head',
-          imageSrc: '/rushilprofile.png', // Image for Rushil
+          imageSrc: '/rushil.png', // Image for Rushil
           alt: 'Rushil Vishwakarma',
         },
         {
           name: 'Deeptanshu Lal',
           title: 'GDG Leaderboard Creator',
-          imageSrc: '/deeptanshuprofile.png', // Image for Deeptanshu
+          imageSrc: '/deeptanshu.png', // Image for Deeptanshu
           alt: 'Deeptanshu Lal',
         },
       ].map((member) => (
@@ -187,7 +187,7 @@ const ClientSection = () => (
           </p>
 
           {/* Member Image */}
-          <div className="flex justify-center items-center w-full h-full mb-5">
+          <div className="flex justify-center items-center w-full h-full">
             <Image
               alt={member.alt}
               src={member.imageSrc}
