@@ -155,13 +155,13 @@ const ClientSection = () => (
         {
           name: 'Rushil Vishwakarma',
           title: 'Web-Development Co-Head',
-          imageSrc: '/rushil.png', // Image for Rushil
+          imageSrc: '/rushilprofile.png', // Image for Rushil
           alt: 'Rushil Vishwakarma',
         },
         {
           name: 'Deeptanshu Lal',
           title: 'GDG Leaderboard Creator',
-          imageSrc: '/deeptanshu.png', // Image for Deeptanshu
+          imageSrc: '/deeptanshuprofile.png', // Image for Deeptanshu
           alt: 'Deeptanshu Lal',
         },
       ].map((member) => (
