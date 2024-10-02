@@ -37,6 +37,8 @@ const Icon = () => (
   </svg>
 );
 
+
+
 const Skeleton = ({ index }: { index?: number }) => (
   <div
     className={ny(
@@ -150,54 +152,58 @@ const ClientSection = () => (
     </div>
 
     <h2 className="pt-20 text-center text-sm font-semibold text-gray-600">WEBPAGES CRAFTED BY</h2>
-    <div className="grid grid-cols-2 w-full gap-2 max-w-2xl mx-auto md:grid-cols-2">
-      {[
-        {
-          name: 'Rushil Vishwakarma',
-          title: 'Web-Development Co-Head',
-          imageSrc: '/rushil.png', // Image for Rushil
-          alt: 'Rushil Vishwakarma',
-        },
-        {
-          name: 'Deeptanshu Lal',
-          title: 'GDG Leaderboard Creator',
-          imageSrc: '/deeptanshu.png', // Image for Deeptanshu
-          alt: 'Deeptanshu Lal',
-        },
-      ].map((member) => (
-        <div
-          key={member.name}
-          className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-center justify-center p-3 relative h-[16rem] sm:h-[20rem] mt-7 m-2"
-        >
-          {/* Corner Icons */}
-          <CornerIcon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-          <CornerIcon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-          <CornerIcon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-          <CornerIcon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+<div className="grid grid-cols-2 w-full gap-2 max-w-2xl mx-auto md:grid-cols-2">
+  {[
+    {
+      name: 'Rushil Vishwakarma',
+      title: 'Web-Development Co-Head',
+      imageSrc: '/rushil.png',
+      alt: 'Rushil Vishwakarma',
+    },
+    {
+      name: 'Deeptanshu Lal',
+      title: 'GDG Leaderboard Creator',
+      imageSrc: '/deeptanshu.png',
+      alt: 'Deeptanshu Lal',
+    },
+  ].map((member) => (
+    <div
+      key={member.name}
+      className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-center justify-center relative mt-7 m-2"
+    >
+      {/* Corner Icons */}
+      <CornerIcon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
+      <CornerIcon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
+      <CornerIcon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
+      <CornerIcon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
-          {/* Member Name */}
-          <h1 className="text-left animate-fade-in bg-gradient-to-br from-black from-60% to-black/20 bg-clip-text pt-5 text-xl sm:text-2xl font-bold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40">
-            {member.name.split(' ')[0]}{' '}
-            <span className="block sm:inline">{member.name.split(' ')[1]}</span>
-          </h1>
+      {/* Member Name */}
+      <h1 className="text-left animate-fade-in bg-gradient-to-br from-black from-60% to-black/20 bg-clip-text pt-5 text-xl sm:text-2xl font-bold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40">
+        {member.name.split(' ')[0]}{' '}
+        <span className="block sm:inline">{member.name.split(' ')[1]}</span>
+      </h1>
 
-          {/* Member Title */}
-          <p className="text-[9px] sm:text-sm border font-light dark:border-white/[0.2] border-black/[0.1] rounded-full mt-2 mb-1 text-black dark:text-white px-2 py-0.5">
-            {member.title}
-          </p>
+      {/* Member Title */}
+      <p className="text-[9px] sm:text-sm border font-light dark:border-white/[0.2] border-black/[0.1] rounded-full mt-2 mb-1 text-black dark:text-white px-2 py-0.5">
+        {member.title}
+      </p>
 
-          {/* Member Image */}
-          <div className="flex justify-center items-center w-full h-full">
-            <Image
-              alt={member.alt}
-              src={member.imageSrc}
-              width={150}
-              height={150}
-            />
-          </div>
-        </div>
-      ))}
+      {/* Member Image */}
+      <div className="flex justify-center items-center w-full h-full">
+        <Image
+          alt={member.alt}
+          src={member.imageSrc}
+          layout="responsive" // This ensures the image takes up the full width of the container
+          width={150}
+          height={150}
+          className="w-full h-auto object-cover" // These classes ensure the image scales correctly
+        />
+      </div>
     </div>
+  ))}
+</div>
+
+
   </section>
 );
 

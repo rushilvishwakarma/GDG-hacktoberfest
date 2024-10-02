@@ -99,13 +99,15 @@ export function SiteHeader() {
    return (
       <>
 <header className="animate-fade-in fixed left-0 top-0 z-50 w-full -translate-y-4 border-b opacity-0 backdrop-blur-md [--animation-delay:600ms]">
-   <div className="container flex h-14 items-center justify-between">
+   <div className="container flex h-14 items-center justify-start">
       <Link className="text-md flex items-center" href="/">
-         <img
-            src="/favicon.png"
-            className="text-primary h-8 w-8 object-contain" // Ensure the height and width are explicitly defined
-            alt="Logo"
-         />
+      <img
+   src="/favicon.png"
+   className="text-primary h-8 w-8 max-w-none max-h-none object-contain"
+   style={{ aspectRatio: '1/1' }} // Ensure the aspect ratio remains consistent
+   alt="Logo"
+/>
+
       </Link>
 
                {/*
