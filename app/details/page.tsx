@@ -96,7 +96,7 @@ const Page: NextPage = () => {
       <AccordionItem value="item-2">
         <AccordionTrigger>Is this open to individuals and teams?</AccordionTrigger>
         <AccordionContent>
-        Yes, you can enter this as an individual or work on a project with a team. Keep in mind that if you do this as a team you will have to split the prize money amongst the group. The max number of people per team is 4.
+        Yes, you can enter as an individual or as part of a team. Keep in mind that if you do this as a team you will have to split the prize money amongst the group. The max number of people per team is 4.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
