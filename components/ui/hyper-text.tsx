@@ -31,6 +31,8 @@ export default function HyperText({
   const [trigger, setTrigger] = useState(false);
   const interations = useRef(0);
   const isFirstRender = useRef(true);
+  const [isVisible, setIsVisible] = useState(false); // Track visibility
+  const containerRef = useRef<HTMLDivElement>(null); // Reference for the container
 
   const triggerAnimation = () => {
     interations.current = 0;
@@ -61,16 +63,42 @@ export default function HyperText({
       }
     }, duration / (text.length * 10));
 
-    // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [text, duration, trigger, animateOnLoad]);
 
+  // Intersection Observer setup
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Disconnect after first trigger
+        }
+      },
+      { threshold: 0.1 } // 10% of the element must be visible
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) observer.unobserve(containerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      triggerAnimation(); // Trigger animation when visible
+    }
+  }, [isVisible]);
+
   return (
     <div
+      ref={containerRef} // Attach the ref for observing
       className="overflow-hidden flex cursor-default scale-100"
-      onMouseEnter={triggerAnimation}
     >
-      <AnimatePresence mode="popLayout"> {/* Changed mode here */}
+      <AnimatePresence mode="popLayout">
         {displayText.map((letter, i) => (
           <motion.h1
             key={i}
