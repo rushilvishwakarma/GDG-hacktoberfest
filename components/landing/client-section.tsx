@@ -98,10 +98,10 @@ const BentoGridDemo = () => (
         </p>
                 
         <HyperText
-      className="text-2xl font-bold text-black dark:text-white pt-20"
+      className="sm:text-base md:text-2xl font-bold text-black dark:text-white pt-20"
       text="Up to 10K Worth Cash Prizes"
     />
-    
+
           <p>
       and certificates will be provided.
       </p>
