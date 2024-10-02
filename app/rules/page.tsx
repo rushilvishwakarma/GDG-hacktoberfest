@@ -4,12 +4,16 @@ import { SphereMask } from '~/components/ui/sphere-mask';
 import { ny } from '~/lib/utils';
 import { IconTerminal2 } from '@tabler/icons-react';
 import TypingText from '~/components/ui/typing-text';
-
+import { TbScoreboard } from "react-icons/tb";
+import { MdLeaderboard } from "react-icons/md";
+import { BsPeopleFill } from "react-icons/bs";
+import { RiGuideLine } from "react-icons/ri";
+import { PiFlagCheckeredFill } from "react-icons/pi";
 const RulesPage = () => {
   const features = [
     {
       title: 'Issue Categories and Scoring',
-      icon: <IconTerminal2 />,
+      icon: <TbScoreboard />,
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
           <li>
@@ -29,7 +33,7 @@ const RulesPage = () => {
     },
     {
       title: 'Team Structure',
-      icon: <IconTerminal2 />,
+      icon: <BsPeopleFill />,
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
           <li>Teams can consist of up to 4 members.</li>
@@ -39,7 +43,7 @@ const RulesPage = () => {
     },
     {
       title: 'Submission Guidelines',
-      icon: <IconTerminal2 />,
+      icon: <RiGuideLine />,
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
           <li>Each Pull Request that is accepted will be considered for scoring.</li>
@@ -49,7 +53,7 @@ const RulesPage = () => {
     },
     {
       title: 'Leaderboard and Eliminations',
-      icon: <IconTerminal2 />,
+      icon: <MdLeaderboard />,
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
           <li>An alive leaderboard will be maintained, updating scores as PRs are reviewed and merged.</li>
@@ -59,7 +63,7 @@ const RulesPage = () => {
     },
     {
       title: 'Final Judging',
-      icon: <IconTerminal2 />,
+      icon: <PiFlagCheckeredFill />,
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
           <li>The final evaluations will consider the final score of the team.</li>

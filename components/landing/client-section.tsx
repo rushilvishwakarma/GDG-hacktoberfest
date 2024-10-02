@@ -6,12 +6,14 @@ import { Button } from '~/components/ui/button';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid';
 import { ny } from '~/lib/utils';
 import AnimatedGridPattern from '~/components/ui/animated-grid-pattern';
+import { BsFileRuledFill } from "react-icons/bs";
 import {
   GlowingStarsBackgroundCard,
   GlowingStarsTitle,
   GlowingStarsDescription,
 } from '~/components/ui/glowing-stars';
 import { IconTerminal2 } from '@tabler/icons-react';
+import HyperText from "~/components/ui/hyper-text";
 import { CornerIcon } from '~/components/ui/card-corner';
 import {
   Card,
@@ -19,7 +21,7 @@ import {
   CardDescription,
   CardHeader,
 } from '~/components/ui/card';
-
+import { MdOutlineScoreboard } from "react-icons/md";
 const Icon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -72,28 +74,37 @@ const items = [
     title: 'Rules & Guidelines',
     description: "Let's keep pushing",
     header: <Skeleton index={1} />,
-    icon: <IconTerminal2 className="h-4 w-4 text-neutral-500" />,
+    icon: <BsFileRuledFill  className="h-4 w-4 text-neutral-500" />,
     link: '/rules',
   },
   {
     title: 'Hacktober Fest Leaderboard',
     description: 'I won em you gotta.',
     header: <Skeleton index={2} />,
-    icon: <IconTerminal2 className="h-4 w-4 text-neutral-500" />,
+    icon: <MdOutlineScoreboard className="h-4 w-4 text-neutral-500" />,
     link: '/leaderboard',
   },
 ];
 
 const BentoGridDemo = () => (
-  <div className="text-left mx-auto max-w-screen-xl px-0 md:px-8">
+  <div className="text-left mx-auto max-w-screen-xl px-0 md:px-8 gap-6">
     <Card>
       <CardHeader>
         <CardDescription>Event Overview</CardDescription>
       </CardHeader>
       <CardContent>
         <p>
-          An exciting two-day event that is all about celebrating open-source contribution and the power of collaborative coding. We're bringing together developers and students to dive into open-source projects and sharpen their Git/GitHub skills in a fun and engaging environment.
+          An exciting two-day event that is all about celebrating open-source contribution and the power of collaborative coding. We're bringing together developers and students to dive into open-source projects and sharpen their Git/GitHub skills in a fun and engaging environment. 
         </p>
+                
+        <HyperText
+      className="text-2xl font-bold text-black dark:text-white pt-20"
+      text="Up to 10K Worth Cash Prizes"
+    />
+    
+          <p>
+      and certificates will be provided.
+      </p>
       </CardContent>
     </Card>
     <BentoGrid className="w-full gap-4 text-left md:gap-10 grid grid-cols-1 md:grid-cols-2 pt-10">
@@ -112,8 +123,9 @@ const BentoGridDemo = () => (
           <div key={item.title} className="md:col-span-2 flex justify-center">
             <GlowingStarsBackgroundCard className="h-full max-w-[500px] flex flex-col p-4 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none">
               <div className="mt-auto flex justify-between items-center">
-                <div className="group-hover/bento:translate-x-2 transition duration-200">
-                  <GlowingStarsTitle className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+                <div className="group-hover/bento:translate-x-2 transition duration-200  dark:text-neutral-300">
+                {item.icon}
+                  <GlowingStarsTitle className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mt-2">
                     {item.title}
                   </GlowingStarsTitle>
                   <GlowingStarsDescription className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
@@ -193,7 +205,6 @@ const ClientSection = () => (
         <Image
           alt={member.alt}
           src={member.imageSrc}
-          layout="responsive" // This ensures the image takes up the full width of the container
           width={150}
           height={150}
           className="w-full h-auto object-cover" // These classes ensure the image scales correctly

@@ -102,9 +102,8 @@ export function SiteHeader() {
    <div className="container flex h-14 items-center justify-start">
       <Link className="text-md flex items-center" href="/">
       <img
-   src="/favicon.png"
-   className="text-primary h-8 w-8 max-w-none max-h-none object-contain"
-   style={{ aspectRatio: '1/1' }} // Ensure the aspect ratio remains consistent
+   src="/favicon.svg"
+   className="text-primary h-12 w-12 max-w-none max-h-none"
    alt="Logo"
 />
 

@@ -27,7 +27,7 @@ export const GlowingStarsBackgroundCard = ({
       setTimeout(() => {
         setClickPending(false); // Reset clickPending after delay
         router.push("/leaderboard"); // Navigate to the leaderboard after delay
-      }, 3000); // Delay of 3 seconds (3000ms)
+      }, 2000); // Delay of 2 seconds (2000ms)
     } else {
       router.push("/leaderboard"); // Immediate navigation on desktop
     }

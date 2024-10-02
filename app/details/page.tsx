@@ -14,6 +14,12 @@ import {
  } from '~/components/ui/card';
  import { RainbowButton } from "~/components/ui/rainbow-button";
  import Link from "next/link";
+ import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "~/components/ui/accordion"
 
 // Use NextPage if needed for better type inference
 const Page: NextPage = () => {
@@ -75,9 +81,36 @@ const Page: NextPage = () => {
           </CardContent>
         </Card>
       </div>
+      <div className="md:flex md:space-x-4 mx-auto px-6 md:px-8 lg:px-10 md:space-y-0">
+        <Card className="flex-1">
+        <CardHeader>
+            <CardDescription>FAQ</CardDescription>
+          </CardHeader>
+      <Accordion type="single" collapsible className="w-full px-7 sm:px-7 md:10">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is this event virtual?</AccordionTrigger>
+        <AccordionContent>
+        No, this is an in-person event. All participants are required to attend at the designated venue.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is this open to individuals and teams?</AccordionTrigger>
+        <AccordionContent>
+        Yes, you can enter this as an individual or work on a project with a team. Keep in mind that if you do this as a team you will have to split the prize money amongst the group. The max number of people per team is 4.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Are there age restrictions?</AccordionTrigger>
+        <AccordionContent>
+        Yes, you must be above the age of majority in the country, state, province or jurisdiction of residence (or at least eighteen years old in India) at the time of entry.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+    </Card>
+    </div>
 
       <div className="flex">
-        <div className="ml-auto mx-auto px-6 md:px-8 lg:px-10 ">
+        <div className="ml-auto mx-auto px-6 md:px-8 lg:px-10 pt-10">
           <RainbowButton>
             <Link href="/rules">View Rules</Link>
           </RainbowButton>
