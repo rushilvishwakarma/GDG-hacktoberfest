@@ -81,7 +81,7 @@ const Page: NextPage = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="md:flex md:space-x-4 mx-auto px-6 md:px-8 lg:px-10 md:space-y-0">
+      <div className="text-left md:flex md:space-x-1 mx-auto px-6 md:px-8 lg:px-10 md:space-y-0">
         <Card className="flex-1">
         <CardHeader>
             <CardDescription>FAQ</CardDescription>
@@ -139,9 +139,10 @@ const TimelineDemo = (): JSX.Element => {
       title: "Day 1",
       date: "5-10-2024",
       content: (
-        <ul className="list-none text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
+        <ul className="list-none leading-loose text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
+
           <li>
-            <Badge className="mr-2">9:30 AM</Badge>
+          <Badge className="mr-2">9:30 AM</Badge>
             Introduction to GitHub
           </li>
           <li>
@@ -171,21 +172,25 @@ const TimelineDemo = (): JSX.Element => {
       title: "Day 2",
       date: "6-10-2024",
       content: (
-        <ul className="list-none text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
+        <ul className="leading-loose list-none text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
+
           <li>
-            <Badge className="mr-2">9:30 AM</Badge>
+          <Badge className="mr-2">9:30 AM</Badge>
             Start of day 2 contribution
           </li>
+
           <li>
-            <Badge className="mr-2">12:30 PM</Badge>
+          <Badge className="mr-2">12:30 PM</Badge>
             Lunch Break
           </li>
+
           <li>
-            <Badge className="mr-2">1:30 PM</Badge>
+          <Badge className="mr-2">1:30 PM</Badge>
             Final round for open source contribution
           </li>
+
           <li>
-            <Badge className="mr-2">5:00 PM</Badge>
+          <Badge className="mr-2">5:00 PM</Badge>
             Result Declaration and Prize Distribution
           </li>
         </ul>
