@@ -112,17 +112,7 @@
    * {
       @apply border-border;
    }
-   html {
-      /* Disable right-click functionality */
-      pointer-events: none; /* Disable all mouse interactions */
-   }
-
    body {
       @apply bg-background text-foreground;
-      pointer-events: auto; /* Allow interactions with body content */
-   }
-
-   body * {
-      pointer-events: auto; /* Allow interactions with all child elements */
    }
 }

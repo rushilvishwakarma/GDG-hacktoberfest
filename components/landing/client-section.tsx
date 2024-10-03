@@ -72,7 +72,7 @@ const items = [
   },
   {
     title: 'Rules & Guidelines',
-    description: "Let's keep pushing",
+    description: "Let's keep pushing.",
     header: <Skeleton index={1} />,
     icon: <BsFileRuledFill  className="h-4 w-4 text-neutral-500" />,
     link: '/rules',
