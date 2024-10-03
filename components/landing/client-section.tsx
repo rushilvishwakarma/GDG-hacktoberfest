@@ -183,7 +183,7 @@ const ClientSection = () => (
     },
     {
       name: 'Deeptanshu Lal',
-      title: 'GDG Web-Dev Facilitator',
+      title: 'Web-Dev Facilitator',
       imageSrc: '/deeptanshu.png',
       alt: 'Deeptanshu Lal',
     },
