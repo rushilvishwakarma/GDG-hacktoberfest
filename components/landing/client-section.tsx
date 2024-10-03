@@ -82,7 +82,7 @@ const items = [
     description: 'I won em you gotta.',
     header: <Skeleton index={2} />,
     icon: <MdOutlineScoreboard className="h-4 w-4 text-neutral-500" />,
-    link: '/leaderboard',
+    link: 'http://gdg.duckdns.org',
   },
 ];
 
@@ -163,18 +163,19 @@ const ClientSection = () => (
       </div>
     </div>
 
+
     <h2 className="pt-20 text-center text-sm font-semibold text-gray-600">WEBPAGES CRAFTED BY</h2>
 <div className="grid grid-cols-2 w-full gap-2 max-w-2xl mx-auto md:grid-cols-2">
   {[
     {
       name: 'Rushil Vishwakarma',
-      title: 'Web-Development Co-Head',
+      title: 'Web-Dev Co-Head',
       imageSrc: '/rushil.png',
       alt: 'Rushil Vishwakarma',
     },
     {
       name: 'Deeptanshu Lal',
-      title: 'GDG Leaderboard Creator',
+      title: 'GDG Web-Dev Facilitator',
       imageSrc: '/deeptanshu.png',
       alt: 'Deeptanshu Lal',
     },

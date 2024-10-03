@@ -100,13 +100,18 @@ export function SiteHeader() {
       <>
 <header className="animate-fade-in fixed left-0 top-0 z-50 w-full -translate-y-4 border-b opacity-0 backdrop-blur-md [--animation-delay:600ms]">
    <div className="container flex h-14 items-center justify-start">
-      <Link className="text-md flex items-center" href="/">
+      <Link className="text-md flex items-center gap-1" href="/">
       <img
    src="/favicon.svg"
    className="text-primary h-12 w-12 max-w-none max-h-none"
    alt="Logo"
 />
-
+<div className="border-l border-white h-7 mx-2"></div>
+<img
+   src="/dypatilmonogram.svg"
+   className="text-primary h-9 w-12 max-w-none max-h-none"
+   alt="Logo"
+/>
       </Link>
 
                {/*

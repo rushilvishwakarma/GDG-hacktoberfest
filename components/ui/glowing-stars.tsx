@@ -16,22 +16,21 @@ export const GlowingStarsBackgroundCard = ({
   const [clickPending, setClickPending] = useState(false); // To track click status
   const router = useRouter();
 
-  // Handle click with delay for RAIT pattern
-  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault(); // Prevent immediate navigation
-      setMouseEnter(true); // Show glowing pattern on click
-      setClickPending(true); // Track that we are waiting to navigate
+const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  if (window.innerWidth <= 768) {
+    setMouseEnter(true); // Show glowing pattern on click
+    setClickPending(true); // Track that we are waiting to navigate
 
-      // Delay navigation for 3 seconds to allow RAIT animation to complete
-      setTimeout(() => {
-        setClickPending(false); // Reset clickPending after delay
-        router.push("/leaderboard"); // Navigate to the leaderboard after delay
-      }, 2000); // Delay of 2 seconds (2000ms)
-    } else {
-      router.push("/leaderboard"); // Immediate navigation on desktop
-    }
-  };
+    // Delay navigation for 2 seconds to allow RAIT animation to complete
+    setTimeout(() => {
+      setClickPending(false); // Reset clickPending after delay
+      router.push("http://gdg.duckdns.org"); // Navigate to the leaderboard after delay
+    }, 2000); // 2-second delay (2000ms)
+  } else {
+    router.push("http://gdg.duckdns.org"); // Immediate navigation on desktop
+  }
+};
+
 
   return (
     <div

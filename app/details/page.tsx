@@ -94,10 +94,11 @@ const Page: NextPage = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Is this open to individuals and teams?</AccordionTrigger>
-        <AccordionContent>
-        Yes, you can enter as an individual or as part of a team. Keep in mind that if you do this as a team you will have to split the prize money amongst the group. The max number of people per team is 4.
-        </AccordionContent>
+      <AccordionTrigger>Is this open to individuals and teams?</AccordionTrigger>
+<AccordionContent>
+   No, you cannot enter as an individual. A team must consist of at least two people. Keep in mind that if you participate as a team, you will need to split the prize money among the group. The maximum number of people per team is 4.
+</AccordionContent>
+
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>Are there age restrictions?</AccordionTrigger>

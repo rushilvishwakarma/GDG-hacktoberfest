@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
     <section
       id="hero"
       ref={ref}
-      className="md:min-h-screen flex flex-col justify-center items-start relative pt-20 md:pt-0 mt-9 w-full px-6 md:px-12 lg:px-16"
+      className="md:min-h-screen flex flex-col justify-center items-start relative pt-20 md:pt-0 w-full px-6 md:px-12 lg:px-16"
     >
       {/* Main content with text and timer */}
       <div className="flex flex-col md:flex-row md:items-center justify-between w-full space-y-4 mb-1 md:space-y-0 pb-3">
@@ -35,10 +35,10 @@ const HeroSection: React.FC = () => {
             FEST
           </h1>
 
-          {/* Button below the heading */}
+          {/* Button below the heading 
           <Button asChild className="mt-3 mb-6">
             <Link href="/login">Register for Event</Link>
-          </Button>
+          </Button>*/}
         </div>
 
         {/* Countdown Timer aligned with the heading on desktop */}
