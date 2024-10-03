@@ -82,7 +82,7 @@ const items = [
     description: 'I won em you gotta.',
     header: <Skeleton index={2} />,
     icon: <MdOutlineScoreboard className="h-4 w-4 text-neutral-500" />,
-    link: 'http://gdg.duckdns.org',
+    link: 'https://gdg-rait.duckdns.org',
   },
 ];
 
@@ -148,20 +148,28 @@ const ClientSection = () => (
       <div className="mx-auto max-w-screen-xl px-4 md:px-8 pt-10">
         <h2 className="text-center text-sm font-semibold text-gray-600">VALUABLE SPONSORS</h2>
         <div className="mt-6">
-          <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">
+          <ul className="flex flex-wrap items-center justify-center gap-x-15 gap-y-6 md:gap-x-16 [&_path]:fill-white">
             <li className="flex items-center justify-center">
               <Image
-                alt="Redbull"
-                src="/redbull.png"
-                className="px-2 dark:brightness-0 dark:invert"
-                width={92}
-                height={32}
+                alt="Quatech Systems PVT LTD"
+                src="/Quatech_Systems_pvt_ltd_Logo.png"
+                className="px-2 dark:brightness-60 w-[8rem]" // Adjust width as needed
+                width={92} // Optionally keep for original aspect ratio
+                height={52}
+              />
+              <Image
+                alt="Wayspire"
+                src="/wayspire_Logo.png"
+                className="px-2 dark:brightness-60 w-[8rem]" // Adjust width as needed
+                width={92} // Optionally keep for original aspect ratio
+                height={52}
               />
             </li>
           </ul>
         </div>
       </div>
     </div>
+
 
 
     <h2 className="pt-20 text-center text-sm font-semibold text-gray-600">WEBPAGES CRAFTED BY</h2>
@@ -214,9 +222,7 @@ const ClientSection = () => (
     </div>
   ))}
 </div>
-
-
-  </section>
+</section>
 );
 
 export default ClientSection;

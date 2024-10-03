@@ -10,7 +10,7 @@ const fontSans = FontSans({
    variable: '--font-sans',
 })
 export const metadata: Metadata = {
-   title: "GDG RAIT Hacktober Fest '24",
+   title: "GDG RAIT Hacktober Fest ’24",
    description: 'Code, Create, Collaborate – Open Source for All!',
 }
 

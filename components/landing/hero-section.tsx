@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
           <h1 className="animate-fade-in -translate-y-4 text-left bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-4 sm:py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-white/40">
             HACKTOBER
             <br className="md:block" />
-            FEST
+            FEST ’24
           </h1>
 
           {/* Button below the heading 
