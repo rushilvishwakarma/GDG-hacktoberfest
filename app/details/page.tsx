@@ -98,13 +98,6 @@ const Page: NextPage = () => {
 <AccordionContent>
    No, you cannot enter as an individual. A team must consist of at least two people. Keep in mind that if you participate as a team, you will need to split the prize money among the group. The maximum number of people per team is 4.
 </AccordionContent>
-
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Are there age restrictions?</AccordionTrigger>
-        <AccordionContent>
-        Yes, you must be above the age of majority in the country, state, province or jurisdiction of residence (or at least eighteen years old in India) at the time of entry.
-        </AccordionContent>
       </AccordionItem>
     </Accordion>
     </Card>
