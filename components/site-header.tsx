@@ -118,7 +118,7 @@ export function SiteHeader() {
       <div className="ml-auto flex h-full items-center justify-end">
          <img
             src="/Institutions_Innovation_Council.png"
-            className="text-primary h-16 w-20 max-w-none max-h-none"
+            className="text-primary h-18 w-22 max-w-none max-h-none"
             alt="Institutions Innovation Council Logo"
          />
       </div>
