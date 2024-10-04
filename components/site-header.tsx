@@ -106,17 +106,23 @@ export function SiteHeader() {
    className="text-primary h-12 w-12 max-w-none max-h-none"
    alt="Logo"
 />
-<div className="border-l border-white h-7 mx-2"></div>
-<img
-   src="/dypatilmonogram.svg"
-   className="text-primary h-9 w-12 max-w-none max-h-none"
-   alt="Logo"
-/>
+         <div className="border-l border-white h-7 mx-2"></div>
+         <img
+            src="/dypatilmonogram.svg"
+            className="text-primary h-9 w-12 max-w-none max-h-none"
+            alt="Logo"
+         />
       </Link>
 
-               {/*
-               <div className="ml-auto flex h-full items-center">
-                  <Link className="mr-6 text-sm" href="/signin">
+      {/* Empty space pushing the image to the right */}
+      <div className="ml-auto flex h-full items-center justify-end">
+         <img
+            src="/Institutions_Innovation_Council.png"
+            className="text-primary h-16 w-20 max-w-none max-h-none"
+            alt="Institutions Innovation Council Logo"
+         />
+      </div>
+               {/*   <Link className="mr-6 text-sm" href="/signin">
                      Log in
                   </Link>
                   <Link
@@ -128,7 +134,7 @@ export function SiteHeader() {
                   >
                      Sign up
                   </Link>
-               </div>
+
                */}
 
 
