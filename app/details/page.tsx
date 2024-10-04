@@ -133,7 +133,6 @@ const Page: NextPage = () => {
 
 export default Page;
 
-// Define TimelineDemo separately and ensure it's compatible
 const TimelineDemo = (): JSX.Element => {
   const data = [
     {
@@ -141,29 +140,28 @@ const TimelineDemo = (): JSX.Element => {
       date: "5-10-2024",
       content: (
         <ul className="list-none leading-loose text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
-
           <li>
-          <Badge className="mr-2">9:30 AM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">9:30 AM</Badge>
             Introduction to GitHub
           </li>
           <li>
-            <Badge className="mr-2">11:30 AM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">11:30 AM</Badge>
             Open source contribution begins
           </li>
           <li>
-            <Badge className="mr-2">1:30 PM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">1:30 PM</Badge>
             Break
           </li>
           <li>
-            <Badge className="mr-2">2:30 PM</Badge>
-            RedBull Vault Event
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">2:30 PM</Badge>
+            RedBull® Event
           </li>
           <li>
-            <Badge className="mr-2">3:00 PM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">3:00 PM</Badge>
             Resume contribution
           </li>
           <li>
-            <Badge className="mr-2">6:00 PM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">6:00 PM</Badge>
             End of Day 1
           </li>
         </ul>
@@ -173,32 +171,27 @@ const TimelineDemo = (): JSX.Element => {
       title: "Day 2",
       date: "6-10-2024",
       content: (
-        <ul className="leading-loose list-none text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
-
+        <ul className="list-none leading-loose text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 space-y-4">
           <li>
-          <Badge className="mr-2">9:30 AM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">9:30 AM</Badge>
             Start of day 2 contribution
           </li>
-
           <li>
-          <Badge className="mr-2">12:30 PM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">12:30 PM</Badge>
             Lunch Break
           </li>
-
           <li>
-          <Badge className="mr-2">1:30 PM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">1:30 PM</Badge>
             Final round for open source contribution
           </li>
-
           <li>
-          <Badge className="mr-2">5:00 PM</Badge>
+            <Badge className="inline-flex justify-between min-w-[75px] mr-2">5:00 PM</Badge>
             Result Declaration and Prize Distribution
           </li>
         </ul>
       ),
     },
   ];
-
   return (
     <div className="w-full">
       <Timeline data={data} />

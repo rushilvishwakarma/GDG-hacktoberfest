@@ -36,7 +36,7 @@ const RulesPage = () => {
       icon: <BsPeopleFill />,
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
-          <li>Teams can consist of up to 4 members.</li>
+          <li>Teams can consist of up to 2-4 members.</li>
           <li>All team members must actively participate and contribute to solving issues.</li>
         </ul>
       ),
@@ -57,7 +57,7 @@ const RulesPage = () => {
       renderDescription: () => (
         <ul className="list-disc pl-6 space-y-2 text-neutral-800 dark:text-neutral-300">
           <li>An alive leaderboard will be maintained, updating scores as PRs are reviewed and merged.</li>
-          <li>The bottom 2-3 teams will be eliminated every 1.5 hours based on their standings.</li>
+          <li>The bottom 4 teams will be eliminated every 1.5 hours based on their standings.</li>
         </ul>
       ),
     },
