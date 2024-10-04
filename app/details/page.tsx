@@ -153,10 +153,6 @@ const TimelineDemo = (): JSX.Element => {
             Break
           </li>
           <li>
-            <Badge className="inline-flex justify-between min-w-[75px] mr-2">2:30 PM</Badge>
-            RedBull® Event
-          </li>
-          <li>
             <Badge className="inline-flex justify-between min-w-[75px] mr-2">3:00 PM</Badge>
             Resume contribution
           </li>
