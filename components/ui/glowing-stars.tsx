@@ -24,10 +24,10 @@ const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     // Delay navigation for 2 seconds to allow RAIT animation to complete
     setTimeout(() => {
       setClickPending(false); // Reset clickPending after delay
-      router.push("https://gdg-rait.duckdns.org"); // Navigate to the leaderboard after delay
+      router.push("https://gdg-rait.duckdns.org/lb"); // Navigate to the leaderboard after delay
     }, 2000); // 2-second delay (2000ms)
   } else {
-    router.push("https://gdg-rait.duckdns.org"); // Immediate navigation on desktop
+    router.push("https://gdg-rait.duckdns.org/lb"); // Immediate navigation on desktop
   }
 };
 
