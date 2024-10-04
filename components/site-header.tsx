@@ -115,7 +115,7 @@ export function SiteHeader() {
       </Link>
 
       {/* Empty space pushing the image to the right */}
-      <div className="ml-auto flex h-full items-end justify-end">
+      <div className="ml-auto flex h-full items-center justify-end">
          <img
             src="/Institutions_Innovation_Council.png"
             className="text-primary h-16 w-19 max-w-none max-h-none"
