@@ -82,7 +82,7 @@ const items = [
     description: 'I won em you gotta.',
     header: <Skeleton index={2} />,
     icon: <MdOutlineScoreboard className="h-4 w-4 text-neutral-500" />,
-    link: 'https://gdg-rait.duckdns.org/lb',
+    link: 'https://gdg-rait.duckdns.org/',
   },
 ];
 
