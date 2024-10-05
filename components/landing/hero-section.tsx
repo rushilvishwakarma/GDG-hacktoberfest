@@ -49,9 +49,9 @@ const HeroSection: React.FC = () => {
                 inView ? 'before:animate-image-glow' : ''
               }`}
             >
-              <div className="w-full relative z-10 rounded-[inherit] border border-white/10 bg-white/5">
+              {/*<div className="w-full relative z-10 rounded-[inherit] border border-white/10 bg-white/5">
                 <CountdownTimer targetDate={targetDate} />
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
