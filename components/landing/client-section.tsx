@@ -164,6 +164,13 @@ const ClientSection = () => (
                 width={92} // Optionally keep for original aspect ratio
                 height={52}
               />
+              <Image
+                alt="Blue Whale"
+                src="/blue_whale_Logo.png"
+                className="px-2 dark:brightness-60 w-[8rem]" // Adjust width as needed
+                width={112} // Optionally keep for original aspect ratio
+                height={52}
+              />
             </li>
           </ul>
         </div>
